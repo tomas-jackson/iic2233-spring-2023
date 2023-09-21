@@ -13,5 +13,4 @@ Todas las tareas se encuentran en la carpeta Tareas, y cada una tiene su propio 
 Todas las actividades se encuentran en la carpeta Actividades. En el archivo Enunciado.pdf se encuentran las instrucciones oficiales de cada actividad.
 
 ## Fin
-Exito con todo a todos, programacion avanzada es un ramo complicado y que requiere mucho tiempo, pero si se puede, ojala este repo sea de ayuda, exito!
-```
+Programacion Avanzada es un ramo de esos que te pueden hacer llegar a lagrimas, pero tambien es uno de los unicos donde he sentido que no paraba de aprender y absorber informacion. Espero este repo sea de ayuda para alguien, y si no, al menos me sirvio para ordenar mis carpetas.
