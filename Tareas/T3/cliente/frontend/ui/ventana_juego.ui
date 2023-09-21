@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>DCCachos - Juego</string>
+  </property>
+  <widget class="QLabel" name="label_mayor_num">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>30</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Mayor numero: 0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_turno">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>30</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Numero de turno: 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_id_actual">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>5</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Turno actual: n/a</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_id_pasado">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>45</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Turno pasado: n/a</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edit_valor">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>564</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>  Ingresar valor aqui</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_enviar">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>560</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enviar valor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_pasar">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>600</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pasar turno</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_poder">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>640</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Usar poder</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_reroll">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>600</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ReRoll</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_dudar">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>640</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dudar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pfp1">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>350</y>
+     <width>75</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources/pfp.qrc">:/profile/Sprites/extra/user_profile.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pfp2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>350</y>
+     <width>75</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources/pfp.qrc">:/profile/Sprites/extra/user_profile.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pfp3">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>150</y>
+     <width>75</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources/pfp.qrc">:/profile/Sprites/extra/user_profile.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pfp4">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>550</y>
+     <width>75</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources/pfp.qrc">:/profile/Sprites/extra/user_profile.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_id1">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>630</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Jugador 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_id2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>430</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Jugador 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_id3">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>230</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white
+</string>
+   </property>
+   <property name="text">
+    <string>Jugador 3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_id4">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>430</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Jugador 4</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vida1">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>510</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Vidas: n/a</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vida4">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>310</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Vidas: n/a</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vida3">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>110</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Vidas: n/a</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vida2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>310</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string>Vidas: n/a</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_background">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources/pfp.qrc">:/background/Sprites/background/background_juego.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dado1_1">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>520</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 1px solid white</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dado1_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>590</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 1px solid white</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dado2_1">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>320</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 1px solid white</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dado2_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>390</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 1px solid white</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dado3_1">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>120</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 1px solid white</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dado3_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>190</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 1px solid white
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dado4_1">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>320</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 1px solid white</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dado4_2">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>390</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+border: 1px solid white</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label_background</zorder>
+  <zorder>label_mayor_num</zorder>
+  <zorder>label_turno</zorder>
+  <zorder>label_id_actual</zorder>
+  <zorder>label_id_pasado</zorder>
+  <zorder>edit_valor</zorder>
+  <zorder>boton_enviar</zorder>
+  <zorder>boton_pasar</zorder>
+  <zorder>boton_poder</zorder>
+  <zorder>boton_reroll</zorder>
+  <zorder>boton_dudar</zorder>
+  <zorder>label_pfp1</zorder>
+  <zorder>label_pfp2</zorder>
+  <zorder>label_pfp3</zorder>
+  <zorder>label_pfp4</zorder>
+  <zorder>label_id1</zorder>
+  <zorder>label_id2</zorder>
+  <zorder>label_id3</zorder>
+  <zorder>label_id4</zorder>
+  <zorder>label_vida1</zorder>
+  <zorder>label_vida4</zorder>
+  <zorder>label_vida3</zorder>
+  <zorder>label_vida2</zorder>
+  <zorder>dado1_1</zorder>
+  <zorder>dado1_2</zorder>
+  <zorder>dado2_1</zorder>
+  <zorder>dado2_2</zorder>
+  <zorder>dado3_1</zorder>
+  <zorder>dado3_2</zorder>
+  <zorder>dado4_1</zorder>
+  <zorder>dado4_2</zorder>
+ </widget>
+ <resources>
+  <include location="resources/pfp.qrc"/>
+ </resources>
+ <connections/>
+</ui>

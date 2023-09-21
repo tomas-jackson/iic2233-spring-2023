@@ -1,0 +1,14 @@
+{
+    "host": "localhost",
+    "port": 2345,
+    "id_1": "obama",
+    "id_2": "galletz",
+    "id_3": "chichita",
+    "id_4": "chokita",
+    "NUMERO_JUGADORES": 4,
+    "N_PONDERADOR": 2,
+    "NUMERO_VIDAS": 1,
+    "VALOR_PASO": 7,
+    "PROB_DUDAR": 0.4,
+    "PROB_ANUNCIAR": 0.6
+}

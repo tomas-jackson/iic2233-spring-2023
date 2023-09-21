@@ -1,0 +1,14 @@
+{
+    "dado1": ["cliente", "sprites", "dices", "dice_1.png"],
+    "dado2": ["cliente", "sprites", "dices", "dice_2.png"],
+    "dado3": ["cliente", "sprites", "dices", "dice_3.png"],
+    "dado4": ["cliente", "sprites", "dices", "dice_4.png"],
+    "dado5": ["cliente", "sprites", "dices", "dice_5.png"],
+    "dado6": ["cliente", "sprites", "dices", "dice_6.png"],
+    "fondo_inicio": ["cliente", "sprites", "background", "background_inicio.png"],
+    "fondo_juego": ["cliente", "sprites", "background", "background_juego.png"],
+    "avatar": ["cliente", "sprites", "extra", "user_profile.png"],
+    "logo": ["cliente", "sprites", "extra", "logo.png"],
+    "host": "localhost",
+    "N_PONDERADOR": 2
+}
